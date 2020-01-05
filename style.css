@@ -1,0 +1,613 @@
+@import url(https://fonts.googleapis.com/css?family=Livvic|Poppins&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(110, 23, 203, .541), rgba(40, 117, 249, .63)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%)
+}
+
+.navebar {
+    background-color: #f0f8ff;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.nav-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    transition: .5s
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh
+}
+
+.nav-links a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: .3s
+}
+
+.nav-links a:focus,
+.nav-links a:hover {
+    color: #f1f1f1;
+    transform: scale(1.5)
+}
+
+.icon {
+    color: #000;
+    font-size: 20px
+}
+
+.nav-links .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.mylogo {
+    width: 30%;
+    display: flex;
+    justify-content: center
+}
+
+.mylogo img {
+    width: 13vh;
+    height: 11vh
+}
+
+.myname {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.mywork {
+    font-size: 24px;
+    display: flex;
+    align-items: center
+}
+
+.mywork {
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(23, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+    border-right: 4px solid #b2d3ee;
+    box-sizing: border-box
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #b2d3ee
+    }
+}
+
+li {
+    list-style-type: none
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Poppins, sans-serif
+}
+
+.intro {
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 80vh
+}
+
+#about {
+    height: 110vh;
+    top: 5%
+}
+
+.additional {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 13vh
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    height: 30vh;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center
+}
+
+.card i {
+    color: #0866dcbf;
+    margin-bottom: 2vh
+}
+
+.abt-content {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    margin: 20px
+}
+
+.myimg img {
+    height: 100%;
+    width: 60%
+}
+
+#about h3 {
+    text-align: center;
+    font-size: 30px
+}
+
+.skillcontainer {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin: 20px
+}
+
+.progressBar h4 {
+    font-size: 1.33em
+}
+
+.progressBarContainer {
+    height: 10px;
+    background: #e6eae3;
+    background: rgba(8, 102, 220, .2);
+    overflow: hidden;
+    border-radius: 5px
+}
+
+.progressBarValue {
+    height: 1.66em;
+    float: left;
+    background: #0866dc;
+    background: rgba(8, 102, 220, .75)
+}
+
+.value-95 {
+    width: 95%
+}
+
+.value-85 {
+    width: 85%
+}
+
+.value-75 {
+    width: 75%
+}
+
+.value-60 {
+    width: 60%
+}
+
+.value-70 {
+    width: 70%
+}
+
+.value-80 {
+    width: 80%
+}
+
+.value-90 {
+    width: 90%
+}
+
+.value-100 {
+    width: 100%
+}
+
+.value-30 {
+    width: 30%
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    background: #ebeff2;
+    top: 5%;
+    margin-top: 2vh
+}
+
+#projects h3 {
+    text-align: center;
+    font-size: 30px
+}
+
+.project-container {
+    height: 80vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between
+}
+
+.stack {
+    display: grid;
+    place-items: center;
+    margin: 10vh
+}
+
+.project-cards {
+    display: flex;
+    height: 40vh
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 15px 2px #000;
+    transition: .2s;
+    min-width: 35vh;
+    overflow: hidden;
+    min-height: 40vh
+}
+
+.project-card h2:hover {
+    background: -webkit-linear-gradient(rgba(124, 2, 255, .541), rgba(0, 89, 243, .63));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.project-card:not(:first-child) {
+    margin-left: -4rem
+}
+
+.project-card:hover {
+    transform: translateY(-1rem)
+}
+
+.project-card:hover~.project-card {
+    transform: translateX(4rem)
+}
+
+.project-card button {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 5px solid #f5f5f5;
+    padding: 1vh;
+    margin: 2vh;
+    text-align: center
+}
+
+.project-card button:hover {
+    background: linear-gradient(to right, rgba(124, 2, 255, .541), rgba(0, 89, 243, .63))
+}
+
+#timeline h3 {
+    text-align: center;
+    font-size: 30px
+}
+
+.book {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    top: 50vh;
+    left: 10vh
+}
+
+.bag {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    left: 80%;
+    top: 15%
+}
+
+.computer {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    left: 70%;
+    top: 65vh
+}
+
+.edu {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    top: 75vh;
+    left: -5vh
+}
+
+.flask {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    left: -30vh;
+    top: 10vh
+}
+
+.compass {
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+    opacity: .1;
+    top: 40vh;
+    left: 70vh
+}
+
+main {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 10vh
+}
+
+.tp {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #6e17cb8a 0, #2875f9a1 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: #34435e
+}
+
+.tp:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #34435e;
+    text-align: center;
+    line-height: 1.25em;
+    color: #fff;
+    font-size: 1em
+}
+
+.tp:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0
+}
+
+.tp:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px
+}
+
+.tp:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0
+}
+
+.tp:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px
+}
+
+.tp:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0
+}
+
+.tp:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+#contact {
+    height: 90vh;
+    background: #252935;
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%)
+}
+
+input[type=text],
+textarea {
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: #1e242d;
+    color: #fff
+}
+
+input[type=submit] {
+    background-color: #47a3ee;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+textarea {
+    height: 112px
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: #0866dc
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    widows: 60%;
+    text-align: center;
+    margin: 20px;
+    padding-top: 20vh
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center
+}
+
+.outbox {
+    width: 90px;
+    height: 100px;
+    margin-top: 3.5vh
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .5s cubic-bezier(0, 1.2, .81, 1.43);
+    transform-origin: 0 0
+}
+
+.outbox:hover .box {
+    transform: rotateY(-90deg);
+    cursor: pointer
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0
+}
+
+.frontside {
+    transform: rotateY(0);
+    background-color: #393e46
+}
+
+.rightside {
+    transform: rotateY(90deg);
+    left: 80px;
+    background-color: #47a3ee;
+    color: #fff;
+    align-items: center
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 40px
+}
+
+.footer i {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vh
+}
+
+.conclusion {
+    text-align: center;
+    color: #fff
+}
+
+.heart {
+    color: red;
+    font-size: 22px
+}
+
+@media screen and (max-height:950px) {
+    .nav-links a {
+        font-size: 20px
+    }
+    .nav-links .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px
+    }
+}
